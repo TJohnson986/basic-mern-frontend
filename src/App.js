@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
+import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 
 const App = () => {
   return (
-    <div>
-      <h1>This is App</h1>
-    </div>
+    <Container maxwidth='lg'>
+      <AppBar position="static" color="inherit">
+        <Typography variant="h2" align='center'>Note Posts</Typography>
+        <img src={posts} alt="posts" height="60" />
+      </AppBar>
+    </Container>
   )
 }
 
