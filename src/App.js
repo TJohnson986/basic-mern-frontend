@@ -10,7 +10,6 @@ import Form from './components/Form/form';
 import useStyles from './styles.js';
 
 import postimg from './images/sampleimage.jpg'
-import { useEffect } from 'react';
 
 const App = () => {
   const classes = useStyles();
