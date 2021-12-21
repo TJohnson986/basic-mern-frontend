@@ -1,6 +1,6 @@
 # Basic MERN Frontend
 
-## This is a simple frontend app to use as a baseline for projects. It utilizes React, Material UI, and Redux to dispatch actions
+## This is a simple frontend app to use as a baseline for projects. It utilizes React, Material UI, and Redux to dispatch actions and to have scalability.
 
 #### Installed Dependencies
 1. React
