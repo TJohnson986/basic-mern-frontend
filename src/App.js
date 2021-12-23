@@ -1,4 +1,4 @@
-import React, { useStage, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
@@ -12,13 +12,14 @@ import useStyles from './styles.js';
 import postimg from './images/sampleimage.jpg'
 
 const App = () => {
-  const { currentId, setCurrentId } = useState(null);
+  const [ currentId, setCurrentId ] = useState(null);
   const classes = useStyles();
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [])
+
+  }, [currentId, dispatch])
 
   return (
     <Container maxwidth='lg'>
